@@ -16,5 +16,6 @@ const iniatialApp = async () => {
     );
   });
 };
+export default server;
 
 iniatialApp();

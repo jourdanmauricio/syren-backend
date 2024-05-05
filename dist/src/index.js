@@ -26,5 +26,6 @@ const iniatialApp = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log(`Server listening on port ${envs_1.config.port}. http://${envs_1.config.host}:${envs_1.config.port}/health`);
     });
 });
+exports.default = server_1.default;
 iniatialApp();
 //# sourceMappingURL=index.js.map
