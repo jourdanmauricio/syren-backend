@@ -59,7 +59,6 @@
     "passport-local": "^1.0.0",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.2.1",
-    "typeorm": "^0.3.20",
-    "vercel": "^34.1.8"
+    "typeorm": "^0.3.20"
   }
 }
