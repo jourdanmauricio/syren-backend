@@ -19,7 +19,7 @@ export const AppDataSource = new DataSource({
   database: config.dbDatabase,
   ssl: true,
   synchronize: true,
-  // dropSchema: true,
+  dropSchema: true,
   logging: true,
   // logging: ['error'],
   entities: [Credential, User, Appointment, Contact],
