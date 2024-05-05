@@ -57,3 +57,4 @@ exports.Appointment = Appointment = __decorate([
         name: 'appointments',
     })
 ], Appointment);
+//# sourceMappingURL=Appointment.js.map

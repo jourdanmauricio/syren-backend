@@ -24,3 +24,4 @@ exports.config = {
     cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET,
     cloudinaryFolder: process.env.CLOUDINARY_FOLDER,
 };
+//# sourceMappingURL=envs.js.map

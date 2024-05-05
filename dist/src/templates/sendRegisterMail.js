@@ -76,3 +76,4 @@ function sendRegisterMail(user) {
     });
 }
 exports.default = sendRegisterMail;
+//# sourceMappingURL=sendRegisterMail.js.map

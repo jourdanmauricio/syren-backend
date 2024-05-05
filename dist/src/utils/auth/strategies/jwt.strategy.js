@@ -10,3 +10,4 @@ const JwtStrategy = new passport_jwt_1.Strategy(options, (payload, done) => {
     return done(null, payload);
 });
 exports.default = JwtStrategy;
+//# sourceMappingURL=jwt.strategy.js.map

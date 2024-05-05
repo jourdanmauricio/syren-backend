@@ -35,3 +35,4 @@ exports.uploadImage = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void 
         throw boom_1.default.badRequest('No files provided');
     }
 }));
+//# sourceMappingURL=uploadImage.js.map

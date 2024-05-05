@@ -8,3 +8,4 @@ cloudinary_1.v2.config({
     api_secret: envs_1.config.cloudinaryApiSecret,
 });
 exports.default = cloudinary_1.v2;
+//# sourceMappingURL=cloudinary.js.map

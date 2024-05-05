@@ -25,3 +25,4 @@ exports.scheduleAppointment = (0, catchAsync_1.catchAsync)((req, res) => __await
     });
     res.status(201).json(newAppointment);
 }));
+//# sourceMappingURL=scheduleAppointment.js.map

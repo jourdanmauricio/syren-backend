@@ -31,3 +31,4 @@ const AppointmentRepository = data_source_1.AppDataSource.getRepository(Appointm
     },
 });
 exports.default = AppointmentRepository;
+//# sourceMappingURL=AppoinmentRepository.js.map

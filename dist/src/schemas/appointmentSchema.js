@@ -28,3 +28,4 @@ const getAppointmentSchema = joi_1.default.object({
     id: id.required(),
 });
 exports.getAppointmentSchema = getAppointmentSchema;
+//# sourceMappingURL=appointmentSchema.js.map

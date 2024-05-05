@@ -78,3 +78,4 @@ function sendForgotPassMail(user, token) {
     });
 }
 exports.default = sendForgotPassMail;
+//# sourceMappingURL=sendForgotPassMail.js.map

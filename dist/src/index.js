@@ -29,3 +29,4 @@ const iniatialApp = () => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.iniatialApp = iniatialApp;
 (0, exports.iniatialApp)();
+//# sourceMappingURL=index.js.map

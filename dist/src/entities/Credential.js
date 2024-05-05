@@ -61,3 +61,4 @@ exports.Credential = Credential = __decorate([
         name: 'credentials',
     })
 ], Credential);
+//# sourceMappingURL=Credential.js.map

@@ -39,3 +39,4 @@ exports.recoveryPass = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void
         message: 'Contraeña modificada',
     });
 }));
+//# sourceMappingURL=recoveryPass.js.map

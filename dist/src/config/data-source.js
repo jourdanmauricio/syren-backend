@@ -22,3 +22,4 @@ exports.AppDataSource = new typeorm_1.DataSource({
     subscribers: [subscribers_1.UserSubscriber, subscribers_1.ForgotPassSubscriber, subscribers_1.ContactSubscriber],
     migrations: [],
 });
+//# sourceMappingURL=data-source.js.map

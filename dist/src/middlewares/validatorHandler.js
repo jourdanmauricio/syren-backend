@@ -15,3 +15,4 @@ function validatorHandler(schema, property = 'body') {
     };
 }
 exports.default = validatorHandler;
+//# sourceMappingURL=validatorHandler.js.map
