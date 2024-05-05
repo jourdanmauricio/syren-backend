@@ -61,4 +61,3 @@ function sendContactMail(message) {
     });
 }
 exports.default = sendContactMail;
-//# sourceMappingURL=sendContactMail.js.map

@@ -22,4 +22,3 @@ usersRouter.post('/upload-image', multer_1.upload.single('image'), controllers_1
 usersRouter.post('/register', (0, validatorHandler_1.default)(userSchema_1.createUserSchema, 'body'), controllers_1.registerUser);
 usersRouter.post('/login', passport_1.default.authenticate('local', { session: false }), controllers_1.loginUser);
 exports.default = usersRouter;
-//# sourceMappingURL=usersRouter.js.map

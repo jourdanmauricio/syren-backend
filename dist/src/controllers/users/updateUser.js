@@ -19,4 +19,3 @@ exports.updateUser = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void 0
     const user = yield usersService.updateUser(Number(id), changes);
     res.status(200).json(user);
 }));
-//# sourceMappingURL=updateUser.js.map

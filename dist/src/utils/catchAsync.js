@@ -9,4 +9,3 @@ const catchAsync = (controller) => {
     };
 };
 exports.catchAsync = catchAsync;
-//# sourceMappingURL=catchAsync.js.map

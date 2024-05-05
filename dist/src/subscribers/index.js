@@ -76,4 +76,3 @@ exports.ForgotPassSubscriber = ForgotPassSubscriber;
 exports.ForgotPassSubscriber = ForgotPassSubscriber = __decorate([
     (0, typeorm_1.EventSubscriber)()
 ], ForgotPassSubscriber);
-//# sourceMappingURL=index.js.map

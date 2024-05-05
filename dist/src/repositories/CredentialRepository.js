@@ -28,4 +28,3 @@ const CredentialRepository = data_source_1.AppDataSource.getRepository(Credentia
     },
 });
 exports.default = CredentialRepository;
-//# sourceMappingURL=CredentialRepository.js.map

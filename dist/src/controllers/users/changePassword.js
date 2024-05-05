@@ -32,4 +32,3 @@ exports.changePass = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void 0
         message: 'Contraeña modificada',
     });
 }));
-//# sourceMappingURL=changePassword.js.map

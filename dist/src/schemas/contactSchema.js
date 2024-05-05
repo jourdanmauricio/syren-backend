@@ -14,4 +14,3 @@ const createContactSchema = joi_1.default.object({
     message: message.required(),
 });
 exports.createContactSchema = createContactSchema;
-//# sourceMappingURL=contactSchema.js.map

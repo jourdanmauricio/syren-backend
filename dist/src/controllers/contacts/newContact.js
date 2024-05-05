@@ -22,4 +22,3 @@ exports.newContact = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void 0
     });
     res.status(201).json(newContact);
 }));
-//# sourceMappingURL=newContact.js.map

@@ -18,4 +18,3 @@ exports.getUser = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void 0, v
     const user = yield usersService.getUser(Number(id));
     res.status(200).json(user);
 }));
-//# sourceMappingURL=getUser.js.map

@@ -74,4 +74,3 @@ exports.User = User = __decorate([
         name: 'users',
     })
 ], User);
-//# sourceMappingURL=User.entity.js.map

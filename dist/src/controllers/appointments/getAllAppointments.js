@@ -17,4 +17,3 @@ exports.getAllAppointments = (0, catchAsync_1.catchAsync)((req, res) => __awaite
     const appointments = yield appointmentService.getAll();
     res.status(200).json(appointments);
 }));
-//# sourceMappingURL=getAllAppointments.js.map

@@ -81,4 +81,3 @@ class AppointmentService {
 }
 exports.AppointmentService = AppointmentService;
 AppointmentService.instance = null;
-//# sourceMappingURL=appointmentsService.js.map

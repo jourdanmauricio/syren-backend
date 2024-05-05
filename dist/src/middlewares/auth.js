@@ -44,4 +44,3 @@ const checkRoles = (validSign, ...roles) => {
     };
 };
 exports.checkRoles = checkRoles;
-//# sourceMappingURL=auth.js.map

@@ -45,4 +45,3 @@ exports.Contact = Contact = __decorate([
         name: 'contact',
     })
 ], Contact);
-//# sourceMappingURL=Contact.entity.js.map

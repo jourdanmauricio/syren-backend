@@ -39,4 +39,3 @@ const LocalStrategy = new passport_local_1.Strategy((username, password, done) =
     }
 }));
 exports.default = LocalStrategy;
-//# sourceMappingURL=local.strategy.js.map

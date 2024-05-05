@@ -18,4 +18,3 @@ exports.getAppointment = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(vo
     const appointment = yield appointmentService.getAppointment(Number(id));
     res.status(200).json(appointment);
 }));
-//# sourceMappingURL=getAppointment.js.map

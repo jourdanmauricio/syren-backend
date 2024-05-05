@@ -18,4 +18,3 @@ exports.transporter = nodemailer_1.default.createTransport({
 exports.transporter.verify(() => {
     console.log('Ready for send emails');
 });
-//# sourceMappingURL=mailer.js.map

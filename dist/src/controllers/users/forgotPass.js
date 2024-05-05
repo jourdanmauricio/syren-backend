@@ -36,4 +36,3 @@ exports.forgotPass = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void 0
         .status(200)
         .json({ statusCode: 200, error: null, message: 'Recovery ready' });
 }));
-//# sourceMappingURL=forgotPass.js.map

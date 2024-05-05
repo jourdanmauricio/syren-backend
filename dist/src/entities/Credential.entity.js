@@ -61,4 +61,3 @@ exports.Credential = Credential = __decorate([
         name: 'credentials',
     })
 ], Credential);
-//# sourceMappingURL=Credential.entity.js.map

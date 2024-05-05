@@ -21,4 +21,3 @@ exports.cancelAppointment = (0, catchAsync_1.catchAsync)((req, res) => __awaiter
         .status(200)
         .json({ message: `Canceled appointment id: ${updAppointment.id}` });
 }));
-//# sourceMappingURL=cancelAppointment.js.map

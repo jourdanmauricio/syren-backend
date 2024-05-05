@@ -31,4 +31,3 @@ exports.registerUser = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void
     });
     res.status(201).json(newUser);
 }));
-//# sourceMappingURL=registerUser.js.map

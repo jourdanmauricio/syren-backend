@@ -50,4 +50,3 @@ const getUserSchema = joi_1.default.object({
     id: id.required(),
 });
 exports.getUserSchema = getUserSchema;
-//# sourceMappingURL=userSchema.js.map
