@@ -4,12 +4,12 @@ import {
   InsertEvent,
   UpdateEvent,
 } from 'typeorm';
-import { User } from '../entities/User';
+import { User } from '../entities/User.entity';
 import sendRegisterMail from '../templates/sendRegisterMail';
-import { Credential } from '../entities/Credential';
+import { Credential } from '../entities/Credential.entity';
 import sendForgotPassMail from '../templates/sendForgotPassMail';
 import UserRepository from '../repositories/UserRepository';
-import { Contact } from '../entities/Contact';
+import { Contact } from '../entities/Contact.entity';
 import sendContactMail from '../templates/sendContactMail';
 
 @EventSubscriber()

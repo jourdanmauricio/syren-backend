@@ -1,5 +1,5 @@
 import { CredentialsDto, UpdateCredentialDto } from '../dto/CredentialDto';
-import { Credential } from '../entities/Credential';
+import { Credential } from '../entities/Credential.entity';
 import bcrypt from 'bcrypt';
 import CredentialRepository from '../repositories/CredentialRepository';
 

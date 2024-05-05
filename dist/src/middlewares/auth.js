@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.checkRoles = exports.isAdmin = exports.isLogged = void 0;
 const boom_1 = __importDefault(require("@hapi/boom"));
 const envs_1 = require("../config/envs");
-const Credential_1 = require("../entities/Credential");
+const Credential_entity_1 = require("../entities/Credential.entity");
 const isLogged = (req, res, next) => {
     const { token } = req.headers;
     if (token === envs_1.config.apiKey) {
@@ -19,7 +19,7 @@ const isLogged = (req, res, next) => {
 exports.isLogged = isLogged;
 const isAdmin = (req, res, next) => {
     const user = req.user;
-    if (user.role === Credential_1.TUserRole.ADMIN) {
+    if (user.role === Credential_entity_1.TUserRole.ADMIN) {
         next();
     }
     else {
@@ -31,7 +31,7 @@ const checkRoles = (validSign, ...roles) => {
     return (req, res, next) => {
         const user = req.user;
         const paramId = req.params.id;
-        if (validSign && paramId && user.role !== Credential_1.TUserRole.ADMIN) {
+        if (validSign && paramId && user.role !== Credential_entity_1.TUserRole.ADMIN) {
             if (Number(paramId) !== user.id)
                 next(boom_1.default.forbidden('No autorizado'));
         }

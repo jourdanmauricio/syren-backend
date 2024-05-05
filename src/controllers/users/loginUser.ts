@@ -1,10 +1,10 @@
 import { Request, Response } from 'express';
 import { catchAsync } from '../../utils/catchAsync';
 import jwt from 'jsonwebtoken';
-import { Credential } from '../../entities/Credential';
+import { Credential } from '../../entities/Credential.entity';
 import { config } from '../../config/envs';
 import { UsersService } from '../../services/usersService';
-import { User } from '../../entities/User';
+import { User } from '../../entities/User.entity';
 
 const usersService = UsersService.getInstance();
 

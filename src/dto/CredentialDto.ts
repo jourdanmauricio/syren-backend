@@ -1,4 +1,4 @@
-import { TUserRole } from '../entities/Credential';
+import { TUserRole } from '../entities/Credential.entity';
 
 interface CredentialsDto {
   username: string;

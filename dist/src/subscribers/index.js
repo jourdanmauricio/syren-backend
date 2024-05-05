@@ -20,16 +20,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ForgotPassSubscriber = exports.ContactSubscriber = exports.UserSubscriber = void 0;
 const typeorm_1 = require("typeorm");
-const User_1 = require("../entities/User");
+const User_entity_1 = require("../entities/User.entity");
 const sendRegisterMail_1 = __importDefault(require("../templates/sendRegisterMail"));
-const Credential_1 = require("../entities/Credential");
+const Credential_entity_1 = require("../entities/Credential.entity");
 const sendForgotPassMail_1 = __importDefault(require("../templates/sendForgotPassMail"));
 const UserRepository_1 = __importDefault(require("../repositories/UserRepository"));
-const Contact_1 = require("../entities/Contact");
+const Contact_entity_1 = require("../entities/Contact.entity");
 const sendContactMail_1 = __importDefault(require("../templates/sendContactMail"));
 let UserSubscriber = class UserSubscriber {
     listenTo() {
-        return User_1.User;
+        return User_entity_1.User;
     }
     afterInsert(event) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -43,7 +43,7 @@ exports.UserSubscriber = UserSubscriber = __decorate([
 ], UserSubscriber);
 let ContactSubscriber = class ContactSubscriber {
     listenTo() {
-        return Contact_1.Contact;
+        return Contact_entity_1.Contact;
     }
     afterInsert(event) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -58,7 +58,7 @@ exports.ContactSubscriber = ContactSubscriber = __decorate([
 ], ContactSubscriber);
 let ForgotPassSubscriber = class ForgotPassSubscriber {
     listenTo() {
-        return Credential_1.Credential;
+        return Credential_entity_1.Credential;
     }
     afterUpdate(event) {
         var _a, _b, _c;

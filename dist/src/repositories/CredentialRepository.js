@@ -13,9 +13,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const data_source_1 = require("../config/data-source");
-const Credential_1 = require("../entities/Credential");
+const Credential_entity_1 = require("../entities/Credential.entity");
 const boom_1 = __importDefault(require("@hapi/boom"));
-const CredentialRepository = data_source_1.AppDataSource.getRepository(Credential_1.Credential).extend({
+const CredentialRepository = data_source_1.AppDataSource.getRepository(Credential_entity_1.Credential).extend({
     findById: function (id) {
         return __awaiter(this, void 0, void 0, function* () {
             const user = yield this.findOne({

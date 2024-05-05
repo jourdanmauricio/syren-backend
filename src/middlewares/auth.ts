@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import boom from '@hapi/boom';
 import { config } from '../config/envs';
-import { Credential, TUserRole } from '../entities/Credential';
+import { Credential, TUserRole } from '../entities/Credential.entity';
 
 const isLogged = (req: Request, res: Response, next: NextFunction) => {
   const { token } = req.headers;

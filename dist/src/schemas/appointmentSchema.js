@@ -5,13 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAppointmentSchema = exports.updateAppointmentSchema = exports.createAppointmentSchema = void 0;
 const joi_1 = __importDefault(require("joi"));
-const Appointment_1 = require("../entities/Appointment");
+const Appointment_entity_1 = require("../entities/Appointment.entity");
 const id = joi_1.default.number();
 const date = joi_1.default.date().greater('now');
 const time = joi_1.default.string();
 const status = joi_1.default.string()
-    .default(Appointment_1.TAppointmentStatus.ACTIVE)
-    .valid(Appointment_1.TAppointmentStatus.ACTIVE, Appointment_1.TAppointmentStatus.CANCELLED);
+    .default(Appointment_entity_1.TAppointmentStatus.ACTIVE)
+    .valid(Appointment_entity_1.TAppointmentStatus.ACTIVE, Appointment_entity_1.TAppointmentStatus.CANCELLED);
 const userId = joi_1.default.number();
 const createAppointmentSchema = joi_1.default.object({
     date: date.required(),

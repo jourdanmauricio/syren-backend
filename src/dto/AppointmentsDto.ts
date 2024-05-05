@@ -1,4 +1,4 @@
-import { TAppointmentStatus } from '../entities/Appointment';
+import { TAppointmentStatus } from '../entities/Appointment.entity';
 
 interface IAppointmentDto {
   date: string;

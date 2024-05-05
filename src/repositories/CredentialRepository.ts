@@ -1,5 +1,5 @@
 import { AppDataSource } from '../config/data-source';
-import { Credential } from '../entities/Credential';
+import { Credential } from '../entities/Credential.entity';
 import boom from '@hapi/boom';
 
 const CredentialRepository = AppDataSource.getRepository(Credential).extend({

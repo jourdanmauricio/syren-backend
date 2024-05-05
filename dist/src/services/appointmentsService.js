@@ -15,8 +15,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppointmentService = void 0;
 const boom_1 = __importDefault(require("@hapi/boom"));
 const data_source_1 = require("../config/data-source");
-const Appointment_1 = require("../entities/Appointment");
-const Credential_1 = require("../entities/Credential");
+const Appointment_entity_1 = require("../entities/Appointment.entity");
+const Credential_entity_1 = require("../entities/Credential.entity");
 const AppoinmentRepository_1 = __importDefault(require("../repositories/AppoinmentRepository"));
 const usersService_1 = require("./usersService");
 const usersService = usersService_1.UsersService.getInstance();
@@ -69,11 +69,11 @@ class AppointmentService {
     cancel(id, user) {
         return __awaiter(this, void 0, void 0, function* () {
             const appointment = yield AppoinmentRepository_1.default.findById(id);
-            if (user.role !== Credential_1.TUserRole.ADMIN) {
+            if (user.role !== Credential_entity_1.TUserRole.ADMIN) {
                 if (appointment.user.id !== user.id)
                     throw boom_1.default.forbidden('No autorizado');
             }
-            appointment.status = Appointment_1.TAppointmentStatus.CANCELLED;
+            appointment.status = Appointment_entity_1.TAppointmentStatus.CANCELLED;
             yield AppoinmentRepository_1.default.save(appointment);
             return appointment;
         });

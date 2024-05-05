@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { catchAsync } from '../../utils/catchAsync';
 import { ContactsService } from '../../services/contactsService';
-import { Contact } from '../../entities/Contact';
+import { Contact } from '../../entities/Contact.entity';
 
 const contactService = ContactsService.getInstance();
 

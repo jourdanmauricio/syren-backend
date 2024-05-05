@@ -14,8 +14,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const boom_1 = __importDefault(require("@hapi/boom"));
 const data_source_1 = require("../config/data-source");
-const Appointment_1 = require("../entities/Appointment");
-const AppointmentRepository = data_source_1.AppDataSource.getRepository(Appointment_1.Appointment).extend({
+const Appointment_entity_1 = require("../entities/Appointment.entity");
+const AppointmentRepository = data_source_1.AppDataSource.getRepository(Appointment_entity_1.Appointment).extend({
     findById: function (id) {
         return __awaiter(this, void 0, void 0, function* () {
             const appointment = yield this.findOne({

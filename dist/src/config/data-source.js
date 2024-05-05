@@ -2,12 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppDataSource = void 0;
 const typeorm_1 = require("typeorm");
-const User_1 = require("../entities/User");
-const Credential_1 = require("../entities/Credential");
-const Appointment_1 = require("../entities/Appointment");
 const envs_1 = require("./envs");
 const subscribers_1 = require("../subscribers");
-const Contact_1 = require("../entities/Contact");
 exports.AppDataSource = new typeorm_1.DataSource({
     type: 'postgres',
     host: envs_1.config.dbHost,
@@ -19,7 +15,7 @@ exports.AppDataSource = new typeorm_1.DataSource({
     synchronize: true,
     dropSchema: true,
     logging: true,
-    entities: [Credential_1.Credential, User_1.User, Appointment_1.Appointment, Contact_1.Contact],
+    entities: [__dirname + './../**/*.entity.{js,ts}'],
     subscribers: [subscribers_1.UserSubscriber, subscribers_1.ForgotPassSubscriber, subscribers_1.ContactSubscriber],
     migrations: [],
 });

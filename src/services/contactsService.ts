@@ -1,5 +1,5 @@
 import { CreateContactDto } from '../dto/ContactDto';
-import { Contact } from '../entities/Contact';
+import { Contact } from '../entities/Contact.entity';
 import ContactRepository from '../repositories/ContactRepository';
 
 export class ContactsService {

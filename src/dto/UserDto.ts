@@ -1,4 +1,4 @@
-import { Credential } from '../entities/Credential';
+import { Credential } from '../entities/Credential.entity';
 
 interface CreateUserDto {
   name: string;

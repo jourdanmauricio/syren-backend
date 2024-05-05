@@ -2,7 +2,7 @@ import { UploadApiResponse } from 'cloudinary';
 import cloudinary from '../config/cloudinary';
 import { config } from '../config/envs';
 import { CreateUserDto, UpdateUserDto } from '../dto/UserDto';
-import { User } from '../entities/User';
+import { User } from '../entities/User.entity';
 import UserRepository from '../repositories/UserRepository';
 import boom from '@hapi/boom';
 

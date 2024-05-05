@@ -1,14 +1,14 @@
 import { DataSource } from 'typeorm';
-import { User } from '../entities/User';
-import { Credential } from '../entities/Credential';
-import { Appointment } from '../entities/Appointment';
+// import { User } from '../entities/User.entity';
+// import { Credential } from '../entities/Credential.entity';
+// import { Appointment } from '../entities/Appointment.entity';
+// import { Contact } from '../entities/Contact.entity';
 import { config } from './envs';
 import {
   ContactSubscriber,
   ForgotPassSubscriber,
   UserSubscriber,
 } from '../subscribers';
-import { Contact } from '../entities/Contact';
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
@@ -22,7 +22,8 @@ export const AppDataSource = new DataSource({
   dropSchema: true,
   logging: true,
   // logging: ['error'],
-  entities: [Credential, User, Appointment, Contact],
+  entities: [__dirname + './../**/*.entity.{js,ts}'],
+  // entities: [Credential, User, Appointment, Contact],
   subscribers: [UserSubscriber, ForgotPassSubscriber, ContactSubscriber],
   migrations: [],
 });

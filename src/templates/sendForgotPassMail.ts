@@ -1,6 +1,6 @@
 import { config } from '../config/envs';
 import { transporter } from '../config/mailer';
-import { User } from '../entities/User';
+import { User } from '../entities/User.entity';
 
 async function sendForgotPassMail(user: User, token: string) {
   const link = `${config.frontDomain}/recovery-password?token=${token}`;

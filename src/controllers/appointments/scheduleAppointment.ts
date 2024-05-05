@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Appointment } from '../../entities/Appointment';
+import { Appointment } from '../../entities/Appointment.entity';
 import { AppointmentService } from '../../services/appointmentsService';
 import { catchAsync } from '../../utils/catchAsync';
 

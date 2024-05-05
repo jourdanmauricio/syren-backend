@@ -1,8 +1,11 @@
 import boom from '@hapi/boom';
 import { AppDataSource } from '../config/data-source';
 import IAppointmentDto from '../dto/AppointmentsDto';
-import { Appointment, TAppointmentStatus } from '../entities/Appointment';
-import { Credential, TUserRole } from '../entities/Credential';
+import {
+  Appointment,
+  TAppointmentStatus,
+} from '../entities/Appointment.entity';
+import { Credential, TUserRole } from '../entities/Credential.entity';
 import AppointmentRepository from '../repositories/AppoinmentRepository';
 import { UsersService } from './usersService';
 

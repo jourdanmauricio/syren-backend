@@ -1,5 +1,5 @@
 import { AppDataSource } from '../config/data-source';
-import { Contact } from '../entities/Contact';
+import { Contact } from '../entities/Contact.entity';
 
 const ContactRepository = AppDataSource.getRepository(Contact);
 

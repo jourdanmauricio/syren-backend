@@ -1,6 +1,6 @@
 import boom from '@hapi/boom';
 import { AppDataSource } from '../config/data-source';
-import { Appointment } from '../entities/Appointment';
+import { Appointment } from '../entities/Appointment.entity';
 
 const AppointmentRepository = AppDataSource.getRepository(Appointment).extend({
   findById: async function (id: number): Promise<Appointment> {

@@ -9,40 +9,52 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Contact = void 0;
+exports.Appointment = exports.TAppointmentStatus = void 0;
+var TAppointmentStatus;
+(function (TAppointmentStatus) {
+    TAppointmentStatus["ACTIVE"] = "active";
+    TAppointmentStatus["CANCELLED"] = "cancelled";
+})(TAppointmentStatus || (exports.TAppointmentStatus = TAppointmentStatus = {}));
 const typeorm_1 = require("typeorm");
-let Contact = class Contact {
+const User_entity_1 = require("./User.entity");
+let Appointment = class Appointment {
 };
-exports.Contact = Contact;
+exports.Appointment = Appointment;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
-], Contact.prototype, "id", void 0);
+], Appointment.prototype, "id", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", Date)
+], Appointment.prototype, "date", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Appointment.prototype, "time", void 0);
 __decorate([
     (0, typeorm_1.Column)({
-        length: 150,
+        type: 'enum',
+        enum: TAppointmentStatus,
+        default: TAppointmentStatus.ACTIVE,
     }),
     __metadata("design:type", String)
-], Contact.prototype, "name", void 0);
+], Appointment.prototype, "status", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], Contact.prototype, "email", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], Contact.prototype, "message", void 0);
+    (0, typeorm_1.ManyToOne)(() => User_entity_1.User, (user) => user.appointments),
+    __metadata("design:type", User_entity_1.User)
+], Appointment.prototype, "user", void 0);
 __decorate([
     (0, typeorm_1.CreateDateColumn)(),
     __metadata("design:type", Date)
-], Contact.prototype, "createdAt", void 0);
+], Appointment.prototype, "createdAt", void 0);
 __decorate([
     (0, typeorm_1.UpdateDateColumn)(),
     __metadata("design:type", Date)
-], Contact.prototype, "updatedAt", void 0);
-exports.Contact = Contact = __decorate([
+], Appointment.prototype, "updatedAt", void 0);
+exports.Appointment = Appointment = __decorate([
     (0, typeorm_1.Entity)({
-        name: 'contact',
+        name: 'appointments',
     })
-], Contact);
-//# sourceMappingURL=Contact.js.map
+], Appointment);
+//# sourceMappingURL=Appointment.entity.js.map

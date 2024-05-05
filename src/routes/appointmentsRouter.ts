@@ -15,7 +15,7 @@ import {
 
 import { isAdmin, checkRoles } from './../middlewares/auth';
 import validatorHandler from '../middlewares/validatorHandler';
-import { TUserRole } from '../entities/Credential';
+import { TUserRole } from '../entities/Credential.entity';
 
 const appointmentsRouter: Router = Router();
 

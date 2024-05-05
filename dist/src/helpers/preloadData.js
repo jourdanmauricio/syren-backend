@@ -21,7 +21,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PreloadAppointments = exports.PreloadUsers = void 0;
 const data_source_1 = require("../config/data-source");
-const Credential_1 = require("../entities/Credential");
+const Credential_entity_1 = require("../entities/Credential.entity");
 const bcrypt_1 = __importDefault(require("bcrypt"));
 const AppoinmentRepository_1 = __importDefault(require("../repositories/AppoinmentRepository"));
 const CredentialRepository_1 = __importDefault(require("../repositories/CredentialRepository"));
@@ -34,7 +34,7 @@ const usersData = [
         nDni: 99999999,
         username: 'jourdanmau',
         password: '12345678',
-        role: Credential_1.TUserRole.ADMIN,
+        role: Credential_entity_1.TUserRole.ADMIN,
     },
     {
         name: 'Paola Jourdán',
@@ -43,7 +43,7 @@ const usersData = [
         nDni: 99999998,
         username: 'jourdanpao',
         password: '12345678',
-        role: Credential_1.TUserRole.USER,
+        role: Credential_entity_1.TUserRole.USER,
     },
     {
         name: 'Nancy Jourdán',
@@ -52,7 +52,7 @@ const usersData = [
         nDni: 99999997,
         username: 'jourdannan',
         password: '12345678',
-        role: Credential_1.TUserRole.USER,
+        role: Credential_entity_1.TUserRole.USER,
     },
 ];
 const appointmentsData = [

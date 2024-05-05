@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
-import { User } from '../../entities/User';
+import { User } from '../../entities/User.entity';
 import { UsersService } from '../../services/usersService';
 
 const usersService = UsersService.getInstance();
 
 import { CredentialsService } from '../../services/credentialsServices';
 import { catchAsync } from '../../utils/catchAsync';
-import { Credential } from '../../entities/Credential';
+import { Credential } from '../../entities/Credential.entity';
 
 const credentialsService = CredentialsService.getInstance();
 

@@ -1,7 +1,7 @@
 import { AppDataSource } from '../config/data-source';
-import { TUserRole } from '../entities/Credential';
+import { TUserRole } from '../entities/Credential.entity';
 import bcrypt from 'bcrypt';
-import { User } from '../entities/User';
+import { User } from '../entities/User.entity';
 import AppointmentRepository from '../repositories/AppoinmentRepository';
 import CredentialRepository from '../repositories/CredentialRepository';
 import UserRepository from '../repositories/UserRepository';

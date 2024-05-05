@@ -1,5 +1,5 @@
 import { transporter } from '../config/mailer';
-import { User } from '../entities/User';
+import { User } from '../entities/User.entity';
 
 async function sendRegisterMail(user: User) {
   const styles = `

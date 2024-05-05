@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import { TAppointmentStatus } from '../entities/Appointment';
+import { TAppointmentStatus } from '../entities/Appointment.entity';
 
 const id = Joi.number();
 const date = Joi.date().greater('now');

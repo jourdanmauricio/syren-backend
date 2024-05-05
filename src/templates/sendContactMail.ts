@@ -1,5 +1,5 @@
 import { transporter } from '../config/mailer';
-import { Contact } from '../entities/Contact';
+import { Contact } from '../entities/Contact.entity';
 
 async function sendContactMail(message: Contact) {
   const styles = `

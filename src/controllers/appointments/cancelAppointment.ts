@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { AppointmentService } from '../../services/appointmentsService';
 import { catchAsync } from '../../utils/catchAsync';
-import { Credential } from '../../entities/Credential';
+import { Credential } from '../../entities/Credential.entity';
 
 const appointmentService = AppointmentService.getInstance();
 

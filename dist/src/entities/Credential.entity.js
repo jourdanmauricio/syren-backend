@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Credential = exports.TUserRole = void 0;
 const typeorm_1 = require("typeorm");
-const User_1 = require("./User");
+const User_entity_1 = require("./User.entity");
 var TUserRole;
 (function (TUserRole) {
     TUserRole["ADMIN"] = "admin";
@@ -53,12 +53,12 @@ __decorate([
     __metadata("design:type", String)
 ], Credential.prototype, "role", void 0);
 __decorate([
-    (0, typeorm_1.OneToOne)(() => User_1.User, (user) => user.id),
-    __metadata("design:type", User_1.User)
+    (0, typeorm_1.OneToOne)(() => User_entity_1.User, (user) => user.id),
+    __metadata("design:type", User_entity_1.User)
 ], Credential.prototype, "user", void 0);
 exports.Credential = Credential = __decorate([
     (0, typeorm_1.Entity)({
         name: 'credentials',
     })
 ], Credential);
-//# sourceMappingURL=Credential.js.map
+//# sourceMappingURL=Credential.entity.js.map

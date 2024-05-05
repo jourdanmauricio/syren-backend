@@ -1,7 +1,7 @@
 import boom from '@hapi/boom';
 import { AppDataSource } from '../config/data-source';
-import { User } from '../entities/User';
-import { Credential } from '../entities/Credential';
+import { User } from '../entities/User.entity';
+import { Credential } from '../entities/Credential.entity';
 
 const UserRepository = AppDataSource.getRepository(User).extend({
   findById: async function (id: number): Promise<User> {

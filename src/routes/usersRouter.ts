@@ -21,7 +21,7 @@ import {
   changePassSchema,
 } from '../schemas/userSchema';
 import { upload } from '../middlewares/multer';
-import { TUserRole } from '../entities/Credential';
+import { TUserRole } from '../entities/Credential.entity';
 
 const usersRouter: Router = Router();
 
