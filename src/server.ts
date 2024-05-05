@@ -10,7 +10,7 @@ import {
 
 const server = express();
 server.use(express.json());
-server.use(morgan('dev'));
+server.use(morgan('prod'));
 server.use(cors());
 
 import './utils/auth';

@@ -10,7 +10,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const errorHandler_1 = require("./middlewares/errorHandler");
 const server = (0, express_1.default)();
 server.use(express_1.default.json());
-server.use((0, morgan_1.default)('dev'));
+server.use((0, morgan_1.default)('prod'));
 server.use((0, cors_1.default)());
 require("./utils/auth");
 server.use(indexRouter_1.default);
