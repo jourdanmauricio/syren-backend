@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.iniatialApp = void 0;
 const server_1 = __importDefault(require("./server"));
 const envs_1 = require("./config/envs");
 require("reflect-metadata");
@@ -26,5 +27,6 @@ const iniatialApp = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log(`Server listening on port ${envs_1.config.port}. http://${envs_1.config.host}:${envs_1.config.port}/health`);
     });
 });
+exports.iniatialApp = iniatialApp;
 exports.default = server_1.default;
-iniatialApp();
+(0, exports.iniatialApp)();

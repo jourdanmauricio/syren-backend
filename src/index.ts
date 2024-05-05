@@ -4,7 +4,7 @@ import 'reflect-metadata';
 import { AppDataSource } from './config/data-source';
 import { PreloadAppointments, PreloadUsers } from './helpers/preloadData';
 
-const iniatialApp = async () => {
+export const iniatialApp = async () => {
   await AppDataSource.initialize();
   console.log('server connected to database');
   await PreloadUsers();
