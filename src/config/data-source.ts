@@ -18,7 +18,7 @@ export const AppDataSource = new DataSource({
   password: config.dbPassword,
   database: config.dbDatabase,
   synchronize: true,
-  // dropSchema: true,
+  dropSchema: true,
   // logging: true,
   logging: ['error'],
   entities: [Credential, User, Appointment, Contact],
