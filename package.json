@@ -4,12 +4,13 @@
   "description": "TypeScript",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts",
     "build": "rimraf dist && tsc",
     "ts.check": "tsc --project tsconfig.json",
     "add-build": "git add dist",
     "lint": "eslint . --ext .ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
   },
   "author": "Mauricio Jourdán",
   "license": "ISC",
@@ -58,6 +59,7 @@
     "passport-local": "^1.0.0",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.2.1",
-    "typeorm": "^0.3.20"
+    "typeorm": "^0.3.20",
+    "vercel": "^34.1.8"
   }
 }

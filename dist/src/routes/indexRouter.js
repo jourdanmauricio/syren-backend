@@ -15,3 +15,4 @@ router.use('/users', usersRouter_1.default);
 router.use('/appointments', appointmentsRouter_1.default);
 router.use('/contacts', contactsRouter_1.default);
 exports.default = router;
+//# sourceMappingURL=indexRouter.js.map

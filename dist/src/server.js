@@ -18,3 +18,4 @@ server.use(errorHandler_1.logErrors);
 server.use(errorHandler_1.boomErrorHandler);
 server.use(errorHandler_1.errorHandler);
 exports.default = server;
+//# sourceMappingURL=server.js.map

@@ -8,3 +8,4 @@ const local_strategy_1 = __importDefault(require("./strategies/local.strategy"))
 const jwt_strategy_1 = __importDefault(require("./strategies/jwt.strategy"));
 passport_1.default.use(local_strategy_1.default);
 passport_1.default.use(jwt_strategy_1.default);
+//# sourceMappingURL=index.js.map

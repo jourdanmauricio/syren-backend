@@ -38,3 +38,4 @@ class ContactsService {
 }
 exports.ContactsService = ContactsService;
 ContactsService.instance = null;
+//# sourceMappingURL=contactsService.js.map

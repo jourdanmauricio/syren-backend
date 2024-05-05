@@ -27,3 +27,4 @@ var scheduleAppointment_1 = require("./appointments/scheduleAppointment");
 Object.defineProperty(exports, "scheduleAppointment", { enumerable: true, get: function () { return scheduleAppointment_1.scheduleAppointment; } });
 var cancelAppointment_1 = require("./appointments/cancelAppointment");
 Object.defineProperty(exports, "cancelAppointment", { enumerable: true, get: function () { return cancelAppointment_1.cancelAppointment; } });
+//# sourceMappingURL=index.js.map

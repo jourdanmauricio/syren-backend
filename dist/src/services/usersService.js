@@ -81,3 +81,4 @@ class UsersService {
 }
 exports.UsersService = UsersService;
 UsersService.instance = null;
+//# sourceMappingURL=usersService.js.map

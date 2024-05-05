@@ -34,3 +34,4 @@ exports.loginUser = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(void 0,
         isLogged: true,
     });
 }));
+//# sourceMappingURL=loginUser.js.map

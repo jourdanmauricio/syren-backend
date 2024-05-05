@@ -42,3 +42,4 @@ class CredentialsService {
 }
 exports.CredentialsService = CredentialsService;
 CredentialsService.instance = null;
+//# sourceMappingURL=credentialsServices.js.map

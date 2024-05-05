@@ -17,3 +17,4 @@ exports.getAllContacts = (0, catchAsync_1.catchAsync)((req, res) => __awaiter(vo
     const contacts = yield contactService.getAll();
     res.status(200).json(contacts);
 }));
+//# sourceMappingURL=getAllContacts.js.map

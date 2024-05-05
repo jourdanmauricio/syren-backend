@@ -20,3 +20,4 @@ exports.AppDataSource = new typeorm_1.DataSource({
     logging: true,
     entities: [Credential_entity_1.Credential, User_entity_1.User, Appointment_entity_1.Appointment, Contact_entity_1.Contact],
 });
+//# sourceMappingURL=data-source.js.map
