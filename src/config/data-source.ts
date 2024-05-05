@@ -4,11 +4,11 @@ import { Credential } from '../entities/Credential.entity';
 import { Appointment } from '../entities/Appointment.entity';
 import { Contact } from '../entities/Contact.entity';
 import { config } from './envs';
-import {
-  ContactSubscriber,
-  ForgotPassSubscriber,
-  UserSubscriber,
-} from '../subscribers';
+// import {
+//   ContactSubscriber,
+//   ForgotPassSubscriber,
+//   UserSubscriber,
+// } from '../subscribers';
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
@@ -25,6 +25,6 @@ export const AppDataSource = new DataSource({
   //entities: [__dirname + './../**/*.entity.{js,ts}'],
   entities: [Credential, User, Appointment, Contact],
   // entities: ['dist/**/*.entity{.ts,.js}'],
-  subscribers: [UserSubscriber, ForgotPassSubscriber, ContactSubscriber],
-  migrations: [],
+  // subscribers: [UserSubscriber, ForgotPassSubscriber, ContactSubscriber],
+  // migrations: [],
 });
