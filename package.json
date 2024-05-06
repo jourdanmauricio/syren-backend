@@ -6,8 +6,7 @@
   "scripts": {
     "start": "nodemon src/index.ts",
     "build": "tsc",
-    "lint": "eslint . --ext .ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .ts"
   },
   "author": "Mauricio Jourdán",
   "license": "ISC",
