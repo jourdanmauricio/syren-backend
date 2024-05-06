@@ -4,7 +4,7 @@
   "description": "TypeScript",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "nodemon index.js",
     "build": "tsc",
     "lint": "eslint . --ext .ts"
   },
