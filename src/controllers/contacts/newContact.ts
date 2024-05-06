@@ -8,6 +8,8 @@ const contactService = ContactsService.getInstance();
 export const newContact = catchAsync(async (req: Request, res: Response) => {
   const { name, email, message } = req.body;
 
+  console.log('Prueba!!');
+
   const newContact: Contact = await contactService.create({
     name,
     email,
