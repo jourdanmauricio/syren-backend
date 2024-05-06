@@ -4,7 +4,7 @@
   "description": "TypeScript",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node dist/index.js",
     "build": "tsc",
     "lint": "eslint . --ext .ts"
   },
